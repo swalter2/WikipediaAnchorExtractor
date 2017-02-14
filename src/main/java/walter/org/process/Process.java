@@ -29,7 +29,7 @@ import org.xml.sax.SAXException;
 public class Process {
     public static void main(String[] args) throws IOException{
         
-        String path = args[1];
+        String path = args[0];
         
         Map<String,Integer> anchor_pair_counter = new HashMap<>();
         
