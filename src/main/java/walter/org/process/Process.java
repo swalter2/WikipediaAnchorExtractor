@@ -29,15 +29,16 @@ import org.xml.sax.SAXException;
 public class Process {
     public static void main(String[] args) throws IOException{
         
+        String path = args[1];
+        
         Map<String,Integer> anchor_pair_counter = new HashMap<>();
         
-        String path = "/home/swalter/development/wikipedia/extracted_english";
+        //String path = "/home/swalter/development/wikipedia/extracted_english";
         System.out.println("Intitialization done");
 
         
         try(Stream<Path> paths = Files.walk(Paths.get(path))) {
             paths.forEach(filePath -> {
-                System.out.println(filePath);
                 if (Files.isRegularFile(filePath)) {
                     try {
                         List<List<String>> results = preprocessing(filePath);
