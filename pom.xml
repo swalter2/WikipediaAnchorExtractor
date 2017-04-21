@@ -18,6 +18,11 @@
             <artifactId>maltparser</artifactId>
             <version>1.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.5</version>
+        </dependency>
          <dependency>
              <groupId>net.sf.json-lib</groupId>
              <artifactId>json-lib</artifactId>
@@ -39,8 +44,8 @@
         <dependency>
             <groupId>edu.stanford.nlp</groupId>
             <artifactId>stanford-corenlp</artifactId>
-            <version>3.5.2</version>
-             <classifier>models</classifier>
+            <version>3.7.0</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>edu.stanford.nlp</groupId>
